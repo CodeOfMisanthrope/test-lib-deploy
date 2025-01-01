@@ -27,14 +27,6 @@ $RECYCLE.BIN
 .LSOverride
 .vscode
 
-# Yarn
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-
 # Icon must ends with two \r.
 Icon
 
@@ -49,13 +41,14 @@ Icon
 /bower_components
 /node_modules
 /.yalc
+/.yarn
 /yalc.lock
 
 # Build && test
 /dist
-/docs
 /coverage
 /.nyc_output
+/.husky
 
 .env
 *.d.js
@@ -71,3 +64,9 @@ Icon
 /tmp
 *.tmp
 *.gz
+
+# NPM ignore list
+/docs
+/.github
+/assets
+/typedoc.json
