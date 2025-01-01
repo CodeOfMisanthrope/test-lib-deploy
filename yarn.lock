@@ -1613,7 +1613,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"test-lib-deploy@workspace:.":
+"test-lib-deploy@npm:^0.0.4, test-lib-deploy@workspace:.":
   version: 0.0.0-use.local
   resolution: "test-lib-deploy@workspace:."
   dependencies:
@@ -1623,6 +1623,7 @@ __metadata:
     "@types/node": "npm:^22.10.3"
     rollup: "npm:^4.29.1"
     rollup-plugin-delete: "npm:^2.1.0"
+    test-lib-deploy: "npm:^0.0.4"
   languageName: unknown
   linkType: soft
 
