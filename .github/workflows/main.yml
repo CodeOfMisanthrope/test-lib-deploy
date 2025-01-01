@@ -70,9 +70,8 @@ jobs:
 #          path: dist/
 
       - name: Create npm Release
-        run: |
-            echo "yes"
-            npm publish --access public
+        run:
+          yarn npm publish --access public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
