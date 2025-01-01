@@ -12,8 +12,6 @@ jobs:
       matrix:
         node-version: [ 21.x ]
 
-    needs: test
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -37,7 +35,7 @@ jobs:
       matrix:
         node-version: [ 21.x ]
 
-    needs: [build]
+    needs: build
 
     steps:
       - name: Checkout code
