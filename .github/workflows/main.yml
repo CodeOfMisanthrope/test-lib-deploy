@@ -7,46 +7,44 @@ on:
     types: [ "published" ]
 
 jobs:
-  build:
-    runs-on: ubuntu-22.04
-
-    strategy:
-      matrix:
-        node-version: [ 22.x ]
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Corepack enable
-        run: corepack enable
-
-      - name: Set up Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          cache: 'yarn'
-          node-version: ${{ matrix.node-version }}
-
-      - name: Install dependencies
-        run: yarn
-
-      - name: Run build
-        run: yarn build
+#  build:
+#    runs-on: ubuntu-22.04
+#
+#    strategy:
+#      matrix:
+#        node-version: [ 22.x ]
+#
+#    steps:
+#      - name: Checkout code
+#        uses: actions/checkout@v4
+#
+#      - name: Corepack enable
+#        run: corepack enable
+#
+#      - name: Set up Node.js ${{ matrix.node-version }}
+#        uses: actions/setup-node@v4
+#        with:
+#          cache: 'yarn'
+#          node-version: ${{ matrix.node-version }}
+#
+#      - name: Install dependencies
+#        run: yarn
+#
+#      - name: Run build
+#        run: yarn build
 
   deploy:
     runs-on: ubuntu-22.04
-
-    environment: production
 
     strategy:
       matrix:
         node-version: [ 21.x ]
 
-    needs: build
+#    needs: build
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+#      - name: Checkout code
+#        uses: actions/checkout@v4
 
       - name: Corepack enable
         run: corepack enable
