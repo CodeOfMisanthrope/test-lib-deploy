@@ -71,7 +71,7 @@ jobs:
 
       - name: Create npm Release
         run:
-          yarn npm publish --access public
+          npm publish --access public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
