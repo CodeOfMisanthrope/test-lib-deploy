@@ -1,7 +1,7 @@
 {
   "name": "test-lib-deploy",
   "license": "ISC",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "fower-code <iosdsbb@gmail.com>",
   "keywords": [],
   "type": "module",
