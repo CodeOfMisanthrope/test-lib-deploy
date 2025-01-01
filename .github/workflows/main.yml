@@ -36,6 +36,8 @@ jobs:
   deploy:
     runs-on: ubuntu-22.04
 
+    environment: production
+
     strategy:
       matrix:
         node-version: [ 21.x ]
