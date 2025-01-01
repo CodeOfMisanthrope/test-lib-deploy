@@ -2,7 +2,18 @@
   "name": "test-lib-deploy",
   "license": "ISC",
   "version": "0.0.2",
-  "author": "fower-code <iosdsbb@gmail.com>",
+  "author": {
+    "name": "fower-code",
+    "email": "iosdsbb@gmail.com",
+    "url": "https://github.com/fower-code"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fower-code/test-lib-deploy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fower-code/test-lib-deploy/issues"
+  },
   "keywords": [],
   "type": "module",
   "exports": {

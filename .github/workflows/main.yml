@@ -36,9 +36,6 @@ jobs:
   deploy:
     runs-on: ubuntu-22.04
 
-    permissions:
-      contents: write
-
     strategy:
       matrix:
         node-version: [ 21.x ]
@@ -68,7 +65,7 @@ jobs:
         run: yarn build
 
       - name: Publish package
-        run: npm publish --access public --loglevel verbose
+        run: npm publish --access public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
