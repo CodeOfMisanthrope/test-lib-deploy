@@ -43,8 +43,8 @@ jobs:
 #    needs: build
 
     steps:
-#      - name: Checkout code
-#        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
       - name: Corepack enable
         run: corepack enable
