@@ -1,20 +1,22 @@
 {
   "name": "test-lib-deploy",
   "license": "ISC",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": {
-    "name": "fower-code",
+    "name": "CodeOfMisanthrope",
     "email": "iosdsbb@gmail.com",
-    "url": "https://github.com/fower-code"
+    "url": "https://github.com/CodeOfMisanthrope"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fower-code/test-lib-deploy.git"
+    "url": "git+https://github.com/CodeOfMisanthrope/test-lib-deploy.git"
   },
   "bugs": {
-    "url": "https://github.com/fower-code/test-lib-deploy/issues"
+    "url": "https://github.com/CodeOfMisanthrope/test-lib-deploy/issues"
   },
-  "keywords": [],
+  "keywords": [
+    "test lib deploy"
+  ],
   "type": "module",
   "exports": {
     "import": "./dist/bundle.mjs",
@@ -34,7 +36,6 @@
     "@rollup/plugin-terser": "^0.4.4",
     "@types/node": "^22.10.3",
     "rollup": "^4.29.1",
-    "rollup-plugin-delete": "^2.1.0",
-    "test-lib-deploy": "^0.0.4"
+    "rollup-plugin-delete": "^2.1.0"
   }
 }
