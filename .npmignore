@@ -45,7 +45,6 @@ Icon
 /yalc.lock
 
 # Build && test
-/dist
 /coverage
 /.nyc_output
 /.husky
