@@ -64,7 +64,13 @@ jobs:
       - name: Run build
         run: yarn build
 
-      - name: Publish package
+      - name: Publish to npm
+        uses: actions/upload-artifact@v4
+        with:
+          name: npm-package
+          path: dist/
+
+      - name: Create npm Release
         run: npm publish --access public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
