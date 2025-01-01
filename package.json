@@ -1,18 +1,15 @@
 {
   "name": "test-lib-deploy",
-  "license": "MIT",
+  "license": "ISC",
   "version": "0.0.1",
-  "author": {
-    "name": "fower-code",
-    "email": "iosdsbb@gmail.com",
-    "url": "https://github.com/fower-code"
-  },
+  "author": "fower-code <iosdsbb@gmail.com>",
+  "keywords": [],
   "type": "module",
   "exports": {
     "import": "./dist/bundle.mjs",
     "require": "./dist/bundle.cjs"
   },
-  "packageManager": "yarn@4.6.0",
+  "packageManager": "yarn@4.5.3",
   "scripts": {
     "build": "rollup -c rollup.config.js"
   },
