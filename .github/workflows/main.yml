@@ -70,8 +70,8 @@ jobs:
 
       - name: Create npm Release
         run: |
-          echo ${{ variables.NPM_VAL }}
-          npm publish --access public
+            echo ${{ variables.NPM_VAL }}
+            npm publish --access public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
