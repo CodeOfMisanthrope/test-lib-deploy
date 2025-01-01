@@ -3,6 +3,8 @@ name: main
 on:
   push:
     branches: [ main ]
+  release:
+    types: [ "published" ]
 
 jobs:
   build:
@@ -62,7 +64,8 @@ jobs:
       - name: Run build
         run: yarn build
 
-      - run: npm publish --access public
+      - name: Publish package
+        run: npm publish --access public --loglevel verbose
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
