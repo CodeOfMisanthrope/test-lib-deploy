@@ -1,0 +1,12 @@
+{
+  "name": "test-lib-deploy",
+  "license": "MIT",
+  "version": "0.0.1",
+  "author": {
+    "name": "fower-code",
+    "email": "iosdsbb@gmail.com",
+    "url": "https://github.com/fower-code"
+  },
+  "type": "module",
+  "packageManager": "yarn@4.6.0"
+}
